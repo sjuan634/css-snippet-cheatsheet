@@ -1,0 +1,13 @@
+body {
+  background-color: gray;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+article {
+  border: dashed white 1px
+}
