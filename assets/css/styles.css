@@ -5,12 +5,16 @@
 
 body {
   background-color: #454345;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
 }
 
 header {
   text-align: center;
-  margin: 0 auto 0 auto;
-  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -19,11 +23,12 @@ h1 {
 
 header p {
   color: var(--secondary-color);
+  display: inline-flex;
+  flex-wrap: wrap;
 }
 
 section {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -31,6 +36,8 @@ article {
   border: dashed var(--secondary-color) 1px;
   margin-top: 4%;
   width: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
 h2 {
@@ -41,7 +48,8 @@ h2 {
   width: 90%;
   border-radius: 8px;
   transition: all 0.5s ease-in-out;
-  color: var(--main-color)
+  color: var(--main-color);
+  background-color: #454345;
 }
 
 article:hover,
@@ -67,5 +75,10 @@ pre {
 }
 
 footer {
-  margin-top: 2%;
+  text-align: center;
+  margin: 2% auto 0 auto;
+  max-width: 75%;
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: bold;
 }
